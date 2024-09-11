@@ -4,29 +4,34 @@
     "href": "index.html",
     "title": "COMP/STAT112 Notebook",
     "section": "",
-    "text": "Introduction\nThis is my online notebook for COMP/STAT112 course taken at Macalester College. Please, use the side bar on the left for navigation.",
-    "crumbs": [
-      "Introduction"
-    ]
+    "text": "Introduction\nThis is my online notebook for COMP/STAT112 course taken at Macalester College. Please, use the side bar on the left for navigation."
   },
   {
     "objectID": "activities/README.html",
     "href": "activities/README.html",
     "title": "Activities",
     "section": "",
-    "text": "All activities live here.",
-    "crumbs": [
-      "Activities"
-    ]
+    "text": "All activities live here."
+  },
+  {
+    "objectID": "activities/activity-01.html",
+    "href": "activities/activity-01.html",
+    "title": "1  Activity 01",
+    "section": "",
+    "text": "Hello"
   },
   {
     "objectID": "notes/README.html",
     "href": "notes/README.html",
     "title": "Notes",
     "section": "",
-    "text": "All notes live here.",
-    "crumbs": [
-      "Notes"
-    ]
+    "text": "All notes live here."
+  },
+  {
+    "objectID": "notes/Sept-9-RR.html",
+    "href": "notes/Sept-9-RR.html",
+    "title": "6  Sept 9 Reading Response Notes",
+    "section": "",
+    "text": "In data viz, we essentially start with a blank canvas and then map data onto it. There are multiple possible mapping components. Some basics from Wickham (which goes into more depth):\na frame, or coordinate system The variables or features that define the axes and gridlines of the canvas.\na layer The geometric elements (e.g. lines, points) we add to the canvas to represent either the data points themselves or patterns among the data points. Each type of geometric element is a separate layer. These geometric elements are sometimes called “geoms” or “glyphs” (like heiroglyph!)\nscales The aesthetics we might add to geometric elements (e.g. color, size, shape) to incorporate additional information about data scales or groups.\nfaceting The splitting up of the data into multiple subplots, or facets, to examine different groups within the data.\na theme Additional controls on the “finer points” of the plot aesthetics, (e.g. font type, background, color scheme).\nEXAMPLE In the NYT graphic, the data was mapped to the plot as follows:\nframe: x-axis = date, y-axis = temp layers: add one line per year, add dots for each month in 2023 scales: color each line by decade faceting: none a theme: NYT style"
   }
 ]

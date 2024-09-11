@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>COMP/STAT112 Notebook - 4&nbsp; Note 01</title>
+<title>COMP/STAT112 Notebook - 6&nbsp; Sept 9 Reading Response Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../notes/note-02.html" rel="next">
-<link href="../notes/README.html" rel="prev">
+<link href="../notes/note-02.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -108,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/README.html">Notes</a></li><li class="breadcrumb-item"><a href="../notes/note-01.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Note 01</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notes/README.html">Notes</a></li><li class="breadcrumb-item"><a href="../notes/Sept-9-RR.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sept 9 Reading Response Notes</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -186,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/note-01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../notes/note-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Note 01</span></span></a>
   </div>
 </li>
@@ -198,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../notes/Sept-9-RR.html" class="sidebar-item-text sidebar-link">
+  <a href="../notes/Sept-9-RR.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sept 9 Reading Response Notes</span></span></a>
   </div>
 </li>
@@ -217,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Note 01</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sept 9 Reading Response Notes</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -232,6 +231,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<p>In data viz, we essentially start with a blank canvas and then map data onto it. There are multiple possible mapping components. Some basics from Wickham (which goes into more depth):</p>
+<p>a frame, or coordinate system The variables or features that define the axes and gridlines of the canvas.</p>
+<p>a layer The geometric elements (e.g.&nbsp;lines, points) we add to the canvas to represent either the data points themselves or patterns among the data points. Each type of geometric element is a separate layer. These geometric elements are sometimes called “geoms” or “glyphs” (like heiroglyph!)</p>
+<p>scales The aesthetics we might add to geometric elements (e.g.&nbsp;color, size, shape) to incorporate additional information about data scales or groups.</p>
+<p>faceting The splitting up of the data into multiple subplots, or facets, to examine different groups within the data.</p>
+<p>a theme Additional controls on the “finer points” of the plot aesthetics, (e.g.&nbsp;font type, background, color scheme).</p>
+<p>EXAMPLE In the NYT graphic, the data was mapped to the plot as follows:</p>
+<p>frame: x-axis = date, y-axis = temp layers: add one line per year, add dots for each month in 2023 scales: color each line by decade faceting: none a theme: NYT style</p>
 
 
 <!-- -->
@@ -524,19 +531,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../notes/README.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Notes</span>
+      <a href="../notes/note-02.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Note 02</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../notes/note-02.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Note 02</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Note 01"</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Sept 9 Reading Response Notes"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>In data viz, we essentially start with a blank canvas and then map data onto it. There are multiple possible mapping components. Some basics from Wickham (which goes into more depth):</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>a frame, or coordinate system</span>
+<span id="cb1-8"><a href="#cb1-8"></a>The variables or features that define the axes and gridlines of the canvas.</span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a>a layer</span>
+<span id="cb1-11"><a href="#cb1-11"></a>The geometric elements (e.g. lines, points) we add to the canvas to represent either the data points themselves or patterns among the data points. Each type of geometric element is a separate layer. These geometric elements are sometimes called “geoms” or “glyphs” (like heiroglyph!)</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a>scales</span>
+<span id="cb1-14"><a href="#cb1-14"></a>The aesthetics we might add to geometric elements (e.g. color, size, shape) to incorporate additional information about data scales or groups.</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a>faceting</span>
+<span id="cb1-17"><a href="#cb1-17"></a>The splitting up of the data into multiple subplots, or facets, to examine different groups within the data.</span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a>a theme</span>
+<span id="cb1-20"><a href="#cb1-20"></a>Additional controls on the “finer points” of the plot aesthetics, (e.g. font type, background, color scheme).</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a>EXAMPLE</span>
+<span id="cb1-23"><a href="#cb1-23"></a>In the NYT graphic, the data was mapped to the plot as follows:</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>frame: x-axis = date, y-axis = temp</span>
+<span id="cb1-26"><a href="#cb1-26"></a>layers: add one line per year, add dots for each month in 2023</span>
+<span id="cb1-27"><a href="#cb1-27"></a>scales: color each line by decade</span>
+<span id="cb1-28"><a href="#cb1-28"></a>faceting: none</span>
+<span id="cb1-29"><a href="#cb1-29"></a>a theme: NYT style</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

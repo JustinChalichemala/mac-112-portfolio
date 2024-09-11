@@ -4,7 +4,7 @@ project:
 
 book:
   title: "COMP/STAT112 Notebook"
-  author: "Your Name Here"
+  author: "Justin Chalichemala"
   date: "Date Here"
   reader-mode: true
   
@@ -21,6 +21,7 @@ book:
       chapters: 
       - notes/note-01.qmd
       - notes/note-02.qmd
+      - notes/Sept-9-RR.qmd
 
 format:
   html:

@@ -1,0 +1,29 @@
+---
+title: "Sept 9 Reading Response Notes"
+---
+
+In data viz, we essentially start with a blank canvas and then map data onto it. There are multiple possible mapping components. Some basics from Wickham (which goes into more depth):
+
+a frame, or coordinate system
+The variables or features that define the axes and gridlines of the canvas.
+
+a layer
+The geometric elements (e.g. lines, points) we add to the canvas to represent either the data points themselves or patterns among the data points. Each type of geometric element is a separate layer. These geometric elements are sometimes called “geoms” or “glyphs” (like heiroglyph!)
+
+scales
+The aesthetics we might add to geometric elements (e.g. color, size, shape) to incorporate additional information about data scales or groups.
+
+faceting
+The splitting up of the data into multiple subplots, or facets, to examine different groups within the data.
+
+a theme
+Additional controls on the “finer points” of the plot aesthetics, (e.g. font type, background, color scheme).
+
+EXAMPLE
+In the NYT graphic, the data was mapped to the plot as follows:
+
+frame: x-axis = date, y-axis = temp
+layers: add one line per year, add dots for each month in 2023
+scales: color each line by decade
+faceting: none
+a theme: NYT style
