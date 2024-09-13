@@ -15,10 +15,30 @@ head(hikes)
 library(tidyverse)
 
 # Use the ggplot function
-ggplot(hikes, aes(x = rating)) + geom_bar()
+ggplot(hikes, aes(x = rating))
 ```
 # Exercise 3
 ```{r}
 ggplot(hikes, aes(x = rating)) + geom_bar()
+```
+There is more counts of moderate
+
+# Exercise 4
+```{r}
+# Bar chart
+ggplot(hikes, aes(x = rating)) +
+  geom_bar()
+```
+```{r}
+# Added labels
+ggplot(hikes, aes(x = rating)) +
+  geom_bar() +
+  labs(x = "Rating", y = "Number of hikes")
+```
+```{r}
+# Changes the color of the bar to blue
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
 ```
 
