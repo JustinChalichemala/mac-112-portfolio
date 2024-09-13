@@ -42,3 +42,10 @@ ggplot(hikes, aes(x = rating)) +
   labs(x = "Rating", y = "Number of hikes")
 ```
 
+```{r}
+# COMMENT on the change in the code and the corresponding change in the plot
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(color = "orange", fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
+```
+
