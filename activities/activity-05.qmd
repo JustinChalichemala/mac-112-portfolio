@@ -1,0 +1,34 @@
+---
+title: "Activity 05"
+---
+
+```{r}
+# Import and check out data
+library(tidyverse)
+education <- read.csv("https://mac-stat.github.io/data/sat.csv")
+head(education)
+```
+
+
+# Exercise 1
+```{r}
+ggplot(data = education, aes(x = sat)) +
+  geom_histogram()
+```
+Almost a normal distribution, maybe a little bit skewed right
+
+# Exercise 2
+```{r}
+# Construct a plot of sat vs expend
+# Include a "best fit linear regression model" (HINT: method = "lm")
+ggplot(data = education, aes(x = sat, y = expend)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+```{r}
+# Construct a plot of sat vs salary
+# Include a "best fit linear regression model" (HINT: method = "lm")
+ggplot
+```
+
