@@ -1,0 +1,31 @@
+---
+title: "Exam 1 Notes"
+
+---
+
+# First steps when working with data viz
+dim()
+str()
+
+#2vars
+stacked bar-chart--fill
+facet (splitting plot into different groups/categories)
+dodge (side-by-side)
+
+#3 cat vars
+bar chart, use 3rd variable for facet
+
+#max num vars in one plot
+Categorical:3
+Numerical: 6 (7 if 3D)
+
+# how to make plots mor effective
+labels
+alt text
+labels
+choose the proper plots
+don't be biased/misrepresent data
+
+#Viz spatial data
+x is longitude
+y is latitude

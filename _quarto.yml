@@ -26,6 +26,7 @@ book:
       - notes/note-01.qmd
       - notes/note-02.qmd
       - notes/Sept-9-RR.qmd
+      - notes/Exam-1.qmd
 
 format:
   html:
