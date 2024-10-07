@@ -1,0 +1,69 @@
+---
+title: "Activity 10"
+---
+
+#Exercise 1
+```{r}
+sleep_wide <- read.csv("https://mac-stat.github.io/data/sleep_wide.csv")
+library(tidyverse)
+
+head(sleep_wide)
+```
+The units of observation in sleep_wide is sleep subjects and their reaction time on 3 hours of sleep
+
+# Exercise 2
+```{r}
+# For cols, try 2 appproaches: using - and starts_with
+sleep_wide |>
+  pivot_longer(cols = -Subject, names_to = "day", values_to = "reaction_time")
+```
+```{r}
+sleep_long <- sleep_wide |>
+  pivot_longer(cols = -Subject,
+               names_to = "day",
+               names_prefix = "day_",
+               values_to = "reaction_time")
+
+head(sleep_long)
+```
+```{r}
+# Make a line plot of reaction time by day for each subject
+# Put these all on the same frame
+ggplot(data = sleep_long, aes(x = day, y = reaction_time, color = Subject)) +
+  geom_line()
+```
+
+# Exercise 3
+
+```{r}
+sleep_long <- sleep_wide |>
+  pivot_longer(cols = -Subject,
+               names_to = "day",
+               names_prefix = "day_",
+               values_to = "reaction_time") |> 
+  mutate(Subject = as.factor(Subject), day = as.numeric(day))
+
+# Check it out
+# Same data, different class
+head(sleep_long)
+```
+
+
+```{r}
+# Make a line plot of reaction time by day for each subject
+# Put these all on the same frame
+ggplot(data = sleep_long, aes(x = day, y = reaction_time, color = Subject)) +
+  geom_line()
+```
+
+```{r}
+# Make a line plot of reaction time by day for each subject
+# Put these all on the same frame
+ggplot(data = sleep_long, aes(x = day, y = reaction_time, color = Subject)) +
+  geom_line() + 
+  facet_wrap(~Subject)
+```
+```
+
+
+
